@@ -2,6 +2,9 @@
 .*
 ~*
 
+# ignore image files
+*.png
+
 # ignore node dependency directories (used by grunt)
 node_modules/
 
