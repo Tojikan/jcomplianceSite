@@ -28,8 +28,9 @@ gulp.task('serve', ['sass'], function(){
         }
     });
 
-    gulp.watch("./scss/styles.scss", ['sass']);
+    gulp.watch("./scss/*.scss", ['sass']);
     gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./*.js").on('change', browserSync.reload);
 });
 
 //when gulp is run at command line within the project, call the serve task by default so you don't have to call serve explicitly

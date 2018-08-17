@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
-html, body {
-  padding: 0px;
-  margin: 0px;
-  border: 0px; }
-
 /*navigation section*/
 #navbar {
   background-color: #191919;
   position: fixed;
-  width: 300px;
-  height: 100vh; }
+  width: 20%;
+  height: 100%; }
 
 #navbar nav {
   margin-top: 5%; }
@@ -33,14 +28,15 @@ html, body {
 
 #navbar a, #navbar #navbar-header {
   font-family: "Abel", sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
   #navbar a h2, #navbar #navbar-header h2 {
     font-size: 1.5em;
     color: #ffffff; }
 
 footer {
   position: fixed;
-  width: 300px;
+  width: 20%;
   bottom: 0px;
   background: #191919; }
   footer i {
@@ -54,3 +50,137 @@ footer {
     color: #9eff6b; }
   footer .fab:hover {
     color: #9eff6b; }
+
+.highlight-active {
+  color: #ffffff !important; }
+
+body {
+  position: relative; }
+  body .content {
+    width: 80%;
+    left: 20%;
+    overflow: hidden;
+    position: relative; }
+  body p, body span, body h1 {
+    font-family: "Abel", sans-serif;
+    color: black; }
+  body .highlight-element {
+    margin-top: 20%; }
+
+.left-padding {
+  left: 50px; }
+
+.home-image {
+  width: 100%;
+  height: auto; }
+
+.home-overlay {
+  background-color: yellow;
+  position: absolute;
+  bottom: 10%;
+  right: -100px;
+  opacity: 0;
+  padding: 25px;
+  animation-name: fadein 2.0s forwards;
+  -webkit-animation: fadein 2.0s forwards; }
+  .home-overlay span {
+    font-size: 2.5em; }
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+    right: 0; } }
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 1;
+    right: 0; } }
+
+.section-padding {
+  padding: 50px; }
+
+.description {
+  text-align: center; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .flex-container div {
+    width: 250px;
+    margin: 10px;
+    line-height: 25px;
+    height: 300px;
+    border: 1px solid #d3d3d3;
+    text-align: center; }
+
+.accordion-container {
+  position: relative;
+  left: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px; }
+
+.accordion-title {
+  text-align: left;
+  position: relative; }
+
+.accordion {
+  position: relative;
+  color: #6ec1e4;
+  border-bottom: 1px solid #d3d3d3;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Abel", sans-serif;
+  left: 25px;
+  transition: 0.4s; }
+
+.active, .accordion:hover {
+  color: green; }
+
+.panel {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  color: green;
+  left: 250px; }
+
+.contact-container {
+  position: relative;
+  left: 150px; }
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: "Abel", sans-serif; }
+
+textarea {
+  min-height: 80px; }
+
+input[type=submit] {
+  width: 100px;
+  display: block;
+  background: white;
+  margin-top: 24px; }
+
+label {
+  font-family: "Abel", sans-serif; }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+#left-spacing {
+  position: relative;
+  width: 20%; }

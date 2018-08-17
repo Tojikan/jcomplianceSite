@@ -1,0 +1,166 @@
+
+
+body{
+    position: relative;
+
+    .content{
+        width: 80%;
+        left: $navbar-width;
+        overflow: hidden;
+        position: relative;
+    }
+
+    p, span, h1 {
+        font-family: $font-nav;
+        color: black;
+    }
+
+    .highlight-element{
+        margin-top: 20%;
+    }
+}
+
+
+.left-padding{
+    left: 50px;
+}
+
+//home section
+.home-image{
+    width: 100%;
+    height: auto;
+}
+
+.home-overlay{
+    background-color: yellow;
+    position: absolute;
+    bottom: 10%;
+    right: -100px;
+    opacity: 0;
+    padding: 25px;
+    animation-name: fadein 2.0s forwards;
+    -webkit-animation: fadein 2.0s forwards;
+
+    span {
+        font-size: 2.5em;
+    }
+
+    @keyframes fadein {
+        100% { opacity: 1; right: 0;}
+    }
+
+    @-webkit-keyframes fadein{
+        100%{ opacity: 1; right: 0;}
+    }
+}
+
+
+//description
+
+.section-padding{
+    padding: 50px;
+}
+
+
+.description{
+    text-align: center;
+}
+
+
+//flex boxes
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    div{
+        width: 250px;
+        margin: 10px;
+        line-height: 25px;
+        height: 300px;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+    }
+}
+
+
+//FAQ accordion
+
+.accordion-container{
+    position: relative;
+    left: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.accordion-title{
+    text-align: left;
+    position: relative;
+}
+
+
+.accordion{
+    position: relative;
+    color: #6ec1e4;
+    border-bottom: 1px solid #d3d3d3;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-family: $font-nav;
+    left: 25px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover{
+    color: green;
+}
+
+.panel{
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    color: green;
+    left: 250px;
+}
+
+.contact-container{
+    position: relative;
+    left: 150px;
+}
+
+
+//contact page
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: $font-nav;
+}
+
+textarea{
+    min-height: 80px;
+}
+
+input[type=submit]{
+    width: 100px;
+    display: block;
+    background: white;
+    margin-top: 24px;
+}
+
+
+label{
+    font-family: $font-nav;
+}
+
