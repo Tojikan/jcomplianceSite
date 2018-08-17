@@ -5,6 +5,11 @@
 # ignore image files
 *.png
 
+
+# ignore builds
+
+builds/
+
 # ignore node dependency directories (used by grunt)
 node_modules/
 
